@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TamilNadu Tourist Places</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #2b5876, #4e4376);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            color: #f5a623;
+            margin: 30px 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.08);
+            box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.8);
+        }
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: opacity 0.4s ease-in-out;
+        }
+        .gallery-item:hover img {
+            opacity: 0.8;
+        }
+        .place-name {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 1.2em;
+            padding: 10px;
+            text-align: center;
+            transition: opacity 0.4s ease-in-out;
+        }
+        .gallery-item:hover .place-name {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explore Tamil Nadu</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1211952929/photo/marina-beach-chennai-city-tamil-nadu-india-bay-of-bengal-chennai-tourism-east-coast-road.webp?a=1&b=1&s=612x612&w=0&k=20&c=QFRIxoExR93dv-i0-yPl39OC9R8QFBe4uC520QjWWw8=" alt="Marina Beach, Chennai">
+            <div class="place-name">Marina Beach, Chennai</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/172798272/photo/gopurams-of-the-meenakshi-temple.webp?a=1&b=1&s=612x612&w=0&k=20&c=ERCaBOpmOTJ88Tsd-6J5lu8Ki84mS18n7XoW912QTTk=" alt="Meenakshi Temple, Madurai">
+            <div class="place-name">Meenakshi Temple, Madurai</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/537064629/photo/tea-plantations-around-the-emerald-lake-in-ooty.webp?a=1&b=1&s=612x612&w=0&k=20&c=E5yKr6mXwi14CtvU0iMmESgJLbZagJbfwz-dqABsE24=" alt="Ooty Hills">
+            <div class="place-name">Ooty Hills</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1593692716621-1e228b0a9224?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8S29kYWlrYW5hbHxlbnwwfHwwfHx8MA%3D%3D" alt="Kodaikanal">
+            <div class="place-name">Kodaikanal</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://t4.ftcdn.net/jpg/05/58/64/17/360_F_558641735_r64vTIWibgjdz1CGMWssVo11jU8DaLvI.jpg" alt="Brihadeeswara Temple, Thanjavur">
+            <div class="place-name">Brihadeeswara Temple, Thanjavur</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Rameswaram_temple_%2811%29.jpg" alt="Rameswaram Temple">
+            <div class="place-name">Rameswaram Temple</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/mamallapuram-shore-temple-1653384258_d88d3d01bc1bbf48db9b.webp" alt="Shore Temple, Mahabalipuram">
+            <div class="place-name">Shore Temple, Mahabalipuram</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/13/4d/52/20171022120346-img-1018.jpg?w=1200&h=-1&s=1" alt="Yercaud Lake">
+            <div class="place-name">Yercaud Lake</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://tripxl.com/blog/wp-content/uploads/2024/11/Courtallam-Waterfalls-Location.jpg" alt="Courtallam Waterfalls">
+            <div class="place-name">Courtallam Waterfalls</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/vivekananda-rock-memorial-1655195795_ac72566bd8720c988c09.webp" alt="Vivekananda Rock Memorial, Kanyakumari">
+            <div class="place-name">Vivekananda Rock Memorial, Kanyakumari</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTCBn__P6_KX6Vk-hO3LNytGBShypIYTKlOQ&s" alt="Pichavaram Mangrove Forest">
+            <div class="place-name">Pichavaram Mangrove Forest</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://img-cdn.thepublive.com/fit-in/1200x675/filters:format(webp)/30-stades/media/media_files/LCuf7fEWT2UhvoGg8H2R.jpg" alt="Hogenakkal Falls">
+            <div class="place-name">Hogenakkal Falls</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/2/2016/07/KolliHills.jpg" alt="Kolli Hills">
+            <div class="place-name">Kolli Hills</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d8/60/3b/darasuram-airavateswara.jpg?w=900&h=500&s=1" alt="Kumbakonam Temples">
+            <div class="place-name">Kumbakonam Temples</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://famoustemplesofindia.com/wp-content/uploads/2024/06/Golden-Temple-Vellore-1-1024x768.jpg" alt="Vellore Golden Temple">
+            <div class="place-name">Vellore Golden Temple</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjyMi4wGOGuG7X4g1zuFICY5rXdzRQ8lPyegBN4UzxSepK2s_A79AFwaWDezT9ERuOJTzRh-1mTXgDPqBA1noAakvBbwutZxRSCdLL-bjZGsXl_aiz5nPsVPj_3eGQEXYkmdZNOHfrVwQ/s1600/13920603_1213858178659051_7959982837659808924_n.jpg" alt="Rathnagiriswarar Temple Ayyarmalai">
+            <div class="place-name">Rathnagiriswarar Temple Ayyarmalai</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://ramyashotels.com/wp-content/uploads/2021/03/rockfort-temple.jpg" alt="RockFort Trichy">
+            <div class="place-name">RockFort Trichy</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://hodophileandfoodieme.com/wp-content/uploads/2023/04/dhanushkodi-2.jpg" alt="Dhanushkodi Ghost Town">
+            <div class="place-name">Dhanushkodi Ghost Town</div>
+        </div>
+    </div>
+</body>
+</html>
